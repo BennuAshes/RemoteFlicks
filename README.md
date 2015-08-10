@@ -17,3 +17,4 @@ Requires Flask and Python 3.x. Debug mode is active by default. Also if you are 
 ## TODO:
 * more controls - pause, next (now or "end phase" of an episode), volume, fullscreen, episode select/view
 * Flask lags on Windows. I had to set threaded=True but I suspect it's just hammering my CPU even more in its potentially inefficient way. Something to look into
+* modularize the controls, so different players can be configured - for instance, by tweaking the class that click() is called on, you could easily change from a video player to common video/music streamers (some kind of config to store the various options?)
